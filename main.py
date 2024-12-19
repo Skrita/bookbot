@@ -4,8 +4,10 @@ def main():
     num_words = get_num_words(text)
     char_count = get_num_chars(text)
     print("--- Begin report of",book_path," ---")
-    print(f"{num_words} words found in the document")
-    print(char_count)
+    print(f"{num_words} words found in the document \n")
+    for character,count in char_count.items() :
+        print(f"The '{character}' character, was found {count} times")
+    #  print(char_count)
 
 
 def get_num_chars(text):
